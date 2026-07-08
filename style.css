@@ -15,12 +15,44 @@ header{
 h1{
     color: red;
 }
-img{
-    height: 92px;
-}
+
 a{
     text-decoration: none;
 }
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+    flex: 1;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+a:hover{
+    text-decoration: underline;
+}
+botao-login:hover{
+    background-color: #1b66c9;
+    box-shadow: 0 1px 3px 1px rgba(66, 64, 67, .15), 0 1px 2px 0 rgba(60, 64, 67, .3); 
+    text-decoration: none;
+    border-color: transparent;
+}
+caixa-input:hover{
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: transparent;
+    focus-within: 0 1px 6px rgba(32, 33, 36, .28);  
+}
+.logo-google{
+    height: 80px;
+}
+
 .link-cabecalho{
     color: #000000de;
     font-size: 13px;
@@ -60,3 +92,94 @@ footer{
     display: flex;
     gap: 30px;
 }
+.caixa-input{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 582px;
+    padding: 10px 14px;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    
+}
+
+.caixa-icones{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+.input-pesquisa{
+    width: 100%;
+    border: none;
+    height: 20px;
+    outline: none;
+}
+
+.icone-teclado{
+    width: 19px;
+}
+.icone-input{
+    width: 24px;
+    min-width: 24px;
+    fill: #d6a2f8;
+}
+.icone-colorido{
+   width: 24px;
+}
+.botao{
+    padding: 10px 30px;
+    font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+
+}
+botao:hover{
+  box-shadow:none;
+  border-color: transparent;
+}
+.caixa-botoes{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10vh;
+}
+caixa-icones:hover{
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: transparent;
+}
+.caixa-teclado{
+    cursor: pointer;
+    position: relative;
+}
+.caixa-teclado::after{
+    content: "Teclado na tela";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #3c4043;
+    color: white;
+
+    font-size: 12px;
+    padding: 8px 10px;
+    border-radius: 4px;
+
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .2s;
+}
+.caixa-teclado:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+html{
+    height: 100%;
+}
+
